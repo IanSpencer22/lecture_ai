@@ -29,8 +29,8 @@ Lecture AI Generator is a Python-based application that allows users to upload v
 1. **Clone the Repository**
 
     ```sh
-    git clone https://github.com/IanSpencer22/lecture_ai.git
-    cd lecture_ai
+    git clone https://github.com/IanSpencer22/lecture_ai_generator.git
+    cd lecture_ai_generator
     ```
 
 2. **Create a Virtual Environment (optional)**
