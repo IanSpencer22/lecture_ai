@@ -1,0 +1,9 @@
+openai
+tkinter
+speechrecognition
+moviepy
+nltk
+pypdf2
+python-pptx
+python-dotenv
+tkhtmlview
