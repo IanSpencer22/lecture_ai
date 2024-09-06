@@ -30,7 +30,12 @@ def transcribe_video(video_path):
     recognizer = sr.Recognizer()
     with sr.AudioFile(audio_path) as source:
         audio = recognizer.record(source)
-        text = recognizer.recognize_google(audio)
+        try:
+            text = recognizer.recognize_google(audio)
+        except sr.UnknownValueError:
+            text = "Audio not clear or no recognizable speech found."
+        except sr.RequestError as e:
+            text = f"Could not request results from Google Speech Recognition service; {e}"
 
     return text
 
